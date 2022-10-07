@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3382478c-eb91-42d6-a4c7-33e042910aa8" name="变更" comment=":tada: init，导入已有的代码" />
+    <list default="true" id="3382478c-eb91-42d6-a4c7-33e042910aa8" name="变更" comment=":art: 为可读性需求重新排序了方法" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665130573218</updated>
       <workItem from="1665130574537" duration="4000" />
-      <workItem from="1665130587683" duration="603000" />
+      <workItem from="1665130587683" duration="1285000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: init，导入已有的代码">
       <created>1665131075732</created>
@@ -63,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665131075732</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":art: 为可读性需求重新排序了方法">
+      <created>1665131857598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665131857598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,7 +89,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":tada: init，导入已有的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value=":tada: init，导入已有的代码" />
+    <MESSAGE value=":art: 为可读性需求重新排序了方法" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 为可读性需求重新排序了方法" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -4,7 +4,7 @@ package linkedlist;
  * 1) 单链表反转
  * 2) 链表中环的检测
  * 3) 两个有序的链表合并
- * 4) 删除链表倒数第n个结点
+ * 4) 删除链表倒数第k个结点
  * 5) 求链表的中间结点
  */
 public class 常用链表操作练习 {
@@ -26,7 +26,7 @@ public class 常用链表操作练习 {
         }
     }
 
-    // 单链表反转
+    // 1 单链表反转
     public static Node reverse(Node list) {
         Node curr = list, pre = null;
         while (curr != null) {
@@ -38,7 +38,7 @@ public class 常用链表操作练习 {
         return pre;
     }
 
-    // 检测环
+    // 2 链表中环的检测
     public static boolean checkCircle(Node list) {
         if (list == null) return false;
 
@@ -55,7 +55,7 @@ public class 常用链表操作练习 {
         return false;
     }
 
-    //有序链表合并
+    // 3 两个有序的链表合并
     public static Node mergeSortedLists(Node la, Node lb) {
         if (la == null) return lb;
         if (lb == null) return la;
@@ -92,7 +92,7 @@ public class 常用链表操作练习 {
         return head;
     }
 
-    // 删除倒数第K个结点
+    // 4 删除链表倒数第k个结点
     public static Node deleteLastKth(Node list, int k) {
         Node fast = list;
         int i = 1;
@@ -119,7 +119,7 @@ public class 常用链表操作练习 {
         return list;
     }
 
-    // 求中间结点
+    // 5 求链表的中间结点
     public static Node findMiddleNode(Node list) {
         if (list == null) return null;
 
@@ -134,6 +134,7 @@ public class 常用链表操作练习 {
         return slow;
     }
 
+    //补充，打印全部的链表节点 与 创建一个链表节点
     public static void printAll(Node list) {
         Node p = list;
         while (p != null) {
@@ -142,14 +143,12 @@ public class 常用链表操作练习 {
         }
         System.out.println();
     }
-
     public static Node createNode(int value) {
         return new Node(value, null);
     }
 
-
     // ----------------------------------------------
-    // 有序链表合并 Leetcode 21 mergeTwoLists
+    //LeetCode21题 mergeTwoLists 有序链表合并
     //Definition for singly-linked list.
     public class ListNode {
         int val;
