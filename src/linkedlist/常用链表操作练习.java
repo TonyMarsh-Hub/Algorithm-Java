@@ -6,9 +6,26 @@ package linkedlist;
  * 3) 两个有序的链表合并
  * 4) 删除链表倒数第n个结点
  * 5) 求链表的中间结点
- * Author: Zheng
  */
 public class 常用链表操作练习 {
+
+    /**
+     * 链表节点的定义
+     */
+    public static class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+
+        public int getData() {
+            return data;
+        }
+    }
+
     // 单链表反转
     public static Node reverse(Node list) {
         Node curr = list, pre = null;
@@ -38,75 +55,42 @@ public class 常用链表操作练习 {
         return false;
     }
 
-//     有序链表合并
-     public static Node mergeSortedLists(Node la, Node lb) {
-     if (la == null) return lb;
-     if (lb == null) return la;
+    //有序链表合并
+    public static Node mergeSortedLists(Node la, Node lb) {
+        if (la == null) return lb;
+        if (lb == null) return la;
 
-     Node p = la;
-     Node q = lb;
-     Node head;
-     if (p.data < q.data) {
-       head = p;
-       p = p.next;
-     } else {
-       head = q;
-       q = q.next;
-     }
-     Node r = head;
-
-     while (p != null && q != null) {
-       if (p.data < q.data) {
-         r.next = p;
-         p = p.next;
-       } else {
-         r.next = q;
-         q = q.next;
-       }
-       r = r.next;
-     }
-
-     if (p != null) {
-       r.next = p;
-     } else {
-       r.next = q;
-     }
-
-     return head;
-    }
-
-    //-----------------------------------------
-
-    // 有序链表合并 Leetcode 21
-
-    //      Definition for singly-linked list.
-      public class ListNode {
-          int val;
-          ListNode next;
-          ListNode(int x) { val = x; }
-      }
-
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode soldier = new ListNode(0); //利用哨兵结点简化实现难度 技巧三
-        ListNode p = soldier;
-
-        while ( l1 != null && l2 != null ){
-            if ( l1.val < l2.val ){
-                p.next = l1;
-                l1 = l1.next;
-            }
-            else{
-                p.next = l2;
-                l2 = l2.next;
-            }
+        Node p = la;
+        Node q = lb;
+        Node head;
+        if (p.data < q.data) {
+            head = p;
             p = p.next;
+        } else {
+            head = q;
+            q = q.next;
+        }
+        Node r = head;
+
+        while (p != null && q != null) {
+            if (p.data < q.data) {
+                r.next = p;
+                p = p.next;
+            } else {
+                r.next = q;
+                q = q.next;
+            }
+            r = r.next;
         }
 
-        if (l1 != null) { p.next = l1; }
-        if (l2 != null) { p.next = l2; }
-        return soldier.next;
-    }
+        if (p != null) {
+            r.next = p;
+        } else {
+            r.next = q;
+        }
 
+        return head;
+    }
 
     // 删除倒数第K个结点
     public static Node deleteLastKth(Node list, int k) {
@@ -163,17 +147,40 @@ public class 常用链表操作练习 {
         return new Node(value, null);
     }
 
-    public static class Node {
-        private int data;
-        private Node next;
 
-        public Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
+    // ----------------------------------------------
+    // 有序链表合并 Leetcode 21 mergeTwoLists
+    //Definition for singly-linked list.
+    public class ListNode {
+        int val;
+        ListNode next;
 
-        public int getData() {
-            return data;
+        ListNode(int x) {
+            val = x;
         }
     }
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode soldier = new ListNode(0); //利用哨兵结点简化实现难度 技巧三
+        ListNode p = soldier;
+
+        while (l1 != null && l2 != null) {
+            if (l1.val < l2.val) {
+                p.next = l1;
+                l1 = l1.next;
+            } else {
+                p.next = l2;
+                l2 = l2.next;
+            }
+            p = p.next;
+        }
+
+        if (l1 != null) {
+            p.next = l1;
+        }
+        if (l2 != null) {
+            p.next = l2;
+        }
+        return soldier.next;
+    }
+
 }
