@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3382478c-eb91-42d6-a4c7-33e042910aa8" name="变更" comment=":memo: 更新代码注释">
+    <list default="true" id="3382478c-eb91-42d6-a4c7-33e042910aa8" name="变更" comment=":art: 更新reverse方法的参数名称">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedlist/常用链表操作练习.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/常用链表操作练习.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665130573218</updated>
       <workItem from="1665130574537" duration="4000" />
-      <workItem from="1665130587683" duration="3391000" />
+      <workItem from="1665130587683" duration="6355000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: init，导入已有的代码">
       <created>1665131075732</created>
@@ -80,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665132119101</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":art: 更新reverse方法的参数名称">
+      <created>1665134462443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665134462443</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +107,8 @@
     <MESSAGE value=":tada: init，导入已有的代码" />
     <MESSAGE value=":art: 为可读性需求重新排序了方法" />
     <MESSAGE value=":memo: 更新代码注释" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: 更新代码注释" />
+    <MESSAGE value=":art: 更新reverse方法的参数名称" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 更新reverse方法的参数名称" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

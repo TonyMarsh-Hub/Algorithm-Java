@@ -56,6 +56,7 @@ public class 常用链表操作练习 {
     }
 
     // 3 两个有序的链表合并
+    //还可以使用哨兵节点来简化代码，详见本类中的最后一个方法
     public static Node mergeSortedLists(Node la, Node lb) {
         if (la == null) return lb;
         if (lb == null) return la;
@@ -149,6 +150,7 @@ public class 常用链表操作练习 {
 
     // ----------------------------------------------
     //LeetCode21题 mergeTwoLists 有序链表合并
+    //利用哨兵结点简化实现难度 技巧三
     //Definition for singly-linked list.
     public static class ListNode {
         int val;
