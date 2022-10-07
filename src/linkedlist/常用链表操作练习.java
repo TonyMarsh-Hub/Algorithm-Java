@@ -27,8 +27,8 @@ public class 常用链表操作练习 {
     }
 
     // 1 单链表反转
-    public static Node reverse(Node list) {
-        Node curr = list, pre = null;
+    public static Node reverse(Node head) {
+        Node curr = head, pre = null;
         while (curr != null) {
             Node next = curr.next;
             curr.next = pre;
@@ -150,7 +150,7 @@ public class 常用链表操作练习 {
     // ----------------------------------------------
     //LeetCode21题 mergeTwoLists 有序链表合并
     //Definition for singly-linked list.
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
